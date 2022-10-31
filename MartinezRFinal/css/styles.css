@@ -1,0 +1,400 @@
+.navmenu {
+  background-color: #13294b;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+display: flex;
+justify-content: flex-start;
+}
+
+.navmenu a:hover {
+  color: black;
+  border-radius: .5rem;
+}
+
+.navmenu a {
+  color: #7bafd4;
+  text-decoration: none;
+  font-size: .8rem;
+  padding: .4rem
+}
+button{
+  justify-content: center;
+  height: 80px;
+  width: 150px;
+  font-size: medium;
+  margin-left: 100px;
+  transition: all .5s ease;
+  background-color: #7bafd4;
+  color: white;
+  border-radius: 15px;
+ 
+}
+button:hover,
+button:focus {
+  color: #001F3F;
+  background-color: #fff;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.insta {
+  grid-column: 1/2;
+  max-width: 100%;
+  justify-self: left;
+  margin-top: 0.4rem;
+  margin-left: 5rem;
+}
+
+.twitter {
+  grid-column: 2/2;
+  max-width: 100%;
+  justify-self: right;
+  margin-top: 0.4rem;
+  margin-right: 5rem;
+}
+
+.topcontainer {
+  display: grid;
+  background-color: #13294b;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  overflow: auto;
+}
+
+.main {
+  grid-column: 1/-1;
+  overflow: auto;
+}
+
+.title {
+  margin-top: 0.6rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  grid-column: 1/-1;
+  color: #7bafd4;
+}
+
+.infobubble {
+  grid-column: 1/-1;
+  border-radius: 1.2rem;
+  margin-top: 0.5rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+  justify-content: center;
+  background-color: #7bafd4;
+}
+
+.infotitle {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #13294b;
+}
+
+.info {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.15rem;
+  text-align: center;
+  color: #13294b;
+}
+
+.playertitle {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #7bafd4;
+  margin-top: 0.8rem;
+}
+
+.imgcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.love {
+  grid-column: 1/2;
+  max-width: 90%;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.davis {
+  grid-column: 2/2;
+  max-width: 90%;
+  margin-top: 0.5rem;
+  justify-self: right;
+  margin-right: 0.5rem;
+}
+
+.bacot {
+  grid-column: 1/2;
+  max-width: 90%;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.garcia {
+  grid-column: 2/2;
+  max-width: 90%;
+  margin-top: 0.5rem;
+  justify-self: right;
+  margin-right: 0.5rem;
+}
+
+.manek {
+  grid-column: 1/2;
+  max-width: 90%;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.lblack {
+  grid-column: 2/2;
+  max-width: 90%;
+  margin-top: 0.5rem;
+  justify-self: right;
+  margin-right: 0.5rem;
+}
+
+.walton {
+  grid-column: 1/2;
+  max-width: 90%;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.harris {
+  grid-column: 2/2;
+  max-width: 90%;
+  margin-top: 0.5rem;
+  justify-self: right;
+  margin-right: 0.5rem;
+}
+
+.playername {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #7bafd4;
+  margin-top: 0.2rem;
+}
+
+.fullteam {
+  margin-top: 0.6rem;
+  grid-column: 1/-1;
+  max-width: 90%;
+  justify-self: center;
+}
+
+.rostlink {
+  margin-top: 0.4rem;
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+.rostlink a {
+  color: #7bafd4;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.statsTitle {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.4rem;
+  color: #7bafd4;
+  margin-top: 1.5rem;
+  margin-left: 0.3rem;
+}
+
+.stats {
+  font-size: 1.2rem;
+  color: #7bafd4;
+  margin-top: 0.6rem;
+  line-height: 1.6rem;
+  margin-left: 0.3rem;
+}
+
+.breaking {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 1.8rem;
+  font-size: 2rem;
+  color: #7bafd4;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.game {
+  margin-top: 0.5rem;
+  grid-column: 1/-1;
+  justify-self: center;
+  width: 100%;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.news {
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+  color: #7bafd4;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .infobubble {
+    grid-column: 2/4;
+    border-radius: 1.2rem;
+    margin-top: 0.5rem;
+    max-width: 100%;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    background-color: #7bafd4;
+  }
+
+  .topcontainer {
+    display: grid;
+    background-color: #13294b;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .playertitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #7bafd4;
+    margin-top: 0.8rem;
+  }
+  
+  .imgcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .love {
+    grid-column: 1/2;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    justify-self: center;
+  }
+  
+  .davis {
+    grid-column: 2/2;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    justify-self: center;
+  }
+  
+  .bacot {
+    grid-column: 1/2;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    justify-self: center;
+  }
+  
+  .garcia {
+    grid-column: 2/2;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    justify-self: center;
+  }
+  
+  .manek {
+    grid-column: 1/2;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    justify-self: center;
+  }
+  
+  .lblack {
+    grid-column: 2/2;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    justify-self: center;
+  }
+  
+  .walton {
+    grid-column: 1/2;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    justify-self: center;
+  }
+  
+  .harris {
+    grid-column: 2/2;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    justify-self: center;
+  }
+  
+  .playername {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #7bafd4;
+    margin-top: 0.2rem;
+  }
+  
+  .fullteam {
+    margin-top: 1.6rem;
+    grid-column: 1/-1;
+    max-width: 90%;
+    justify-self: center;
+  }
+  
+  .rostlink {
+    margin-top: 0.4rem;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  
+  .rostlink a {
+    color: #7bafd4;
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+  
+  .statsTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    color: #7bafd4;
+    margin-top: 1.5rem;
+    margin-left: 0.3rem;
+    text-align: center;
+  }
+  
+  .stats {
+    font-size: 1.5rem;
+    color: #7bafd4;
+    margin-top: 0.6rem;
+    line-height: 1.6rem;
+    margin-left: 0.3rem;
+    text-align: center;
+  }
+
+  .breaking {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 1.8rem;
+    font-size: 4rem;
+    color: #7bafd4;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .news {
+    margin-top: 0.2rem;
+    font-size: 1.6rem;
+    color: #7bafd4;
+    text-align: center;
+  }
+}

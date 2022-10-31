@@ -1,0 +1,282 @@
+*{
+  box-sizing: border-box;
+  max-width: 100%;
+
+}
+@font-face {
+  font-family: Champion;
+  src:url(/COMP126/FinalProjectFootballPage/font/Champion.eot);
+  src:url(/COMP126/FinalProjectFootballPage/font/Champion.otf);
+}
+body{
+    display: grid;
+    background-color: #13294b;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr 3fr 3fr 0.5fr;
+    grid-template-areas: "header"
+   "intro"
+   "video"
+   "basketball"
+   "football"
+   "footer";
+  
+   
+   
+   }
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+button{
+  justify-content: center;
+  height: 80px;
+  width: 120px;
+  font-size: medium;
+  margin-left: 100px;
+  transition: all .5s ease;
+  background-color: #13294b;
+  color: white;
+  border-radius: 15px;
+ 
+}
+button:hover,
+button:focus {
+  color: #001F3F;
+  background-color: #fff;
+}
+
+header{
+    width: 100%;
+    grid-area: header;
+    display: flex;
+    border: 5px ;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    background-color: #7bafd4;
+}
+.intro{
+  height: 500px;
+  
+  grid-area: intro;
+}
+.intro::before{
+  content: "";
+  background-image: url("/COMP126/images/carolina_athletics.png");
+  height: 600px;
+  position: absolute;
+  top: 120px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+}
+iframe{
+  border-width: 0px;
+}
+h1 {
+  position: relative;
+  color: #7bafd4;  
+  font-size: 5rem;
+  line-height: 0.9;
+  text-align: center;
+}
+h2{
+  position: relative;
+  color: #7bafd4;
+  text-align: center;
+}
+.video{
+    grid-area: video;
+    z-index: 5;
+    height: 500px;
+    margin: auto;
+    width: 500px
+}
+#imgbball,#imgfball{
+  object-fit: cover;
+  width: 100%;
+  margin: auto;
+  opacity: 0.9;
+}
+.uncbasketball{
+    grid-area: basketball;
+    
+    
+    height: 1000px;
+   
+}
+h4{
+  position: relative;
+  top: 120px;
+  opacity: 0.5;
+}
+.uncfootball{
+    grid-area: football;
+   
+    
+    height: 1000px;
+}
+footer{
+    grid-area: footer;
+    
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+h3,h4,h5{
+  opacity: 0.6;
+  color: gray;
+}
+#nclogo{
+    max-height: 100px;
+    
+}
+.basketball, .football {
+    position: relative;
+   
+    
+  }
+
+.ballbutton{
+  width: 2;
+  background-color: #7bafd4;
+}
+  .ball {
+    position: absolute;
+    background-color: #ec6e4e;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    overflow: hidden;
+    border: 3px solid rgb(0, 0, 0);
+    
+  }
+ .ball:hover,
+ .ball:focus{
+    animation: bounce 1.5s ease-in infinite;
+ }
+  
+ .ball2:hover,
+ .ball2:focus{
+    animation: bounce 1.5s ease-in infinite;
+ }
+  
+  @keyframes bounce {
+     0% {transform: translate3d(0, 0, 0) rotate(0deg);}
+    25% {transform: translate3d(0, -185px, 0) rotate(90deg);}
+    50% {transform: translate3d(0, 0, 0) rotate(180deg);}
+    75% {transform: translate3d(0, -185px, 0) rotate(270deg);}
+    100% {transform: translate3d(0, 0, 0) rotate(360deg);}
+  }
+  
+  .ball:before, .ball:after {
+    content:"";
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width:110px;
+    height:3px;
+    top:50px;
+    left:-5px;
+  }
+  
+  .ball:before {
+    transform: rotate(45deg);
+    
+  }
+  
+  .ball:after {
+    transform: rotate(-45deg);
+  }
+  
+  .lines {
+    position: absolute;
+    border-radius:50%;
+    border: 3px solid rgb(0, 0, 0);
+    width:70px;
+    height:70px;
+    left:-20px;
+    top:-20px;
+  }
+  
+  .lines:before {
+    content:"";
+    position: absolute; 
+    border-radius:50%;
+    border: 3px solid rgb(0, 0, 0);
+    width:70px;
+    height:70px;
+    top:65px;
+    left:60px;
+  }
+  
+  .shadow {
+    position: absolute;
+    width:100px;
+    height:15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius:50%;
+    top:95px;
+    z-index:-1;
+    left:3px;
+    
+  }
+  
+  @keyframes scale {
+    0% {transform: scaleX(1);}
+    25% {transform: scaleX(0.7);}
+    50% {transform: scaleX(1);}
+    75% {transform: scaleX(0.7);}
+    100% {transform: scaleX(1);}
+  }
+  .ball2 {
+    position: absolute;
+    background-color: #a7371b;
+    border-radius:50%;
+    width:100px;
+    height:40px;
+    overflow: hidden;
+    border: 3px solid rgb(0, 0, 0);
+    margin-bottom: 60px;
+    
+  }
+  #fbb,#bbb{
+  
+    position: relative;
+    bottom: 100px;
+    margin-left: 35%;
+  }
+  @media only screen and (min-width: 1000px){
+
+    body{
+
+      grid-template-columns: repeat(5,1fr);
+      grid-template-rows: 1fr 5fr 8fr 1fr;
+      grid-template-areas: "header header header header header"
+     "intro intro intro video video"
+      
+      "basketball basketball . football football"
+      "footer footer footer footer footer";
+
+      max-width: 100%;
+
+  }
+  .video{
+    z-index: 2;
+  }
+ 
+  header{
+    position: relative;
+  }
+  .ballbutton{
+    width: 200px;
+    height: 200px;
+  font-size: 2rem;}
+
+
+  }
+
